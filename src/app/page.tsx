@@ -9,6 +9,7 @@ import attachmentsData from '../../data/attachments.json';
 export default function Home() {
   const [currentLoan, setCurrentLoan] = useState<any>(null);
   const [isAttachmentsModalOpen, setIsAttachmentsModalOpen] = useState(false);
+  const [selectedAttachment, setSelectedAttachment] = useState<any>(null);
 
   useEffect(() => {
     // Load a random loan on mount
@@ -345,7 +346,8 @@ export default function Home() {
                       {files.map((file: any, index: number) => (
                         <div
                           key={index}
-                          className="flex items-center gap-4 p-4 bg-white/5 rounded-lg border border-white/10 hover:bg-white/10 transition-colors group"
+                          onClick={() => setSelectedAttachment(file)}
+                          className="flex items-center gap-4 p-4 bg-white/5 rounded-lg border border-white/10 hover:bg-white/10 transition-colors group cursor-pointer"
                         >
                           <div className="flex-shrink-0 w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center border border-white/10">
                             {getFileIcon(file.type)}
@@ -360,7 +362,13 @@ export default function Home() {
                               <span>{new Date(file.uploadDate).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</span>
                             </div>
                           </div>
-                          <button className="flex-shrink-0 p-2 hover:bg-cyan-400/20 rounded-lg transition-colors opacity-0 group-hover:opacity-100">
+                          <button 
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              // Download functionality can be added here
+                            }}
+                            className="flex-shrink-0 p-2 hover:bg-cyan-400/20 rounded-lg transition-colors opacity-0 group-hover:opacity-100"
+                          >
                             <Download size={18} className="text-cyan-400" />
                           </button>
                         </div>
@@ -378,6 +386,134 @@ export default function Home() {
               </div>
               <button
                 onClick={() => setIsAttachmentsModalOpen(false)}
+                className="px-6 py-2 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg text-white text-sm font-medium hover:shadow-[0_4px_16px_rgba(76,201,240,0.3)] transition-all"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Attachment Viewer Modal */}
+      {selectedAttachment && (
+        <div className="fixed inset-0 z-[60] flex items-center justify-center p-4">
+          {/* Backdrop */}
+          <div 
+            className="absolute inset-0 bg-black/80 backdrop-blur-sm"
+            onClick={() => setSelectedAttachment(null)}
+          />
+          
+          {/* Viewer Modal Content */}
+          <div className="relative w-full max-w-6xl max-h-[95vh] bg-[rgba(18,22,36,0.98)] rounded-2xl border border-white/20 shadow-2xl overflow-hidden flex flex-col animate-[fadeIn_0.3s_ease-out]">
+            {/* Viewer Header */}
+            <div className="flex items-center justify-between p-6 border-b border-white/10">
+              <div className="flex items-center gap-4 flex-1 min-w-0">
+                <div className="flex-shrink-0 w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center border border-white/10">
+                  {getFileIcon(selectedAttachment.type)}
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h2 className="text-xl font-semibold text-gray-100 truncate">{selectedAttachment.name}</h2>
+                  <div className="flex items-center gap-4 mt-1 text-xs text-gray-400">
+                    <span>{selectedAttachment.type}</span>
+                    <span>•</span>
+                    <span>{formatFileSize(selectedAttachment.size)}</span>
+                    <span>•</span>
+                    <span>{new Date(selectedAttachment.uploadDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                    <span>•</span>
+                    <span className="px-2 py-0.5 bg-cyan-400/20 text-cyan-400 rounded">{selectedAttachment.category}</span>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    // Download functionality
+                  }}
+                  className="p-2 hover:bg-cyan-400/20 rounded-lg transition-colors"
+                  title="Download"
+                >
+                  <Download size={20} className="text-cyan-400" />
+                </button>
+                <button
+                  onClick={() => setSelectedAttachment(null)}
+                  className="p-2 hover:bg-white/10 rounded-lg transition-colors"
+                >
+                  <X size={24} className="text-gray-400" />
+                </button>
+              </div>
+            </div>
+
+            {/* Viewer Body */}
+            <div className="flex-1 overflow-y-auto p-6 bg-gradient-to-br from-[#0a0e27] to-[#1a1f3a]">
+              {selectedAttachment.type === 'PDF' && (
+                <div className="w-full h-full min-h-[600px] bg-white/5 rounded-lg border border-white/10 flex items-center justify-center">
+                  <div className="text-center">
+                    <FileText size={64} className="text-gray-400 mx-auto mb-4" />
+                    <p className="text-gray-300 text-lg font-medium mb-2">PDF Document Preview</p>
+                    <p className="text-gray-400 text-sm">This is a sample PDF document: {selectedAttachment.name}</p>
+                    <p className="text-gray-500 text-xs mt-4">In a real application, this would display the actual PDF content</p>
+                    <div className="mt-6 p-4 bg-white/5 rounded-lg border border-white/10 text-left max-w-md mx-auto">
+                      <p className="text-gray-300 text-sm mb-2">Document Information:</p>
+                      <ul className="text-gray-400 text-xs space-y-1">
+                        <li>• File Size: {formatFileSize(selectedAttachment.size)}</li>
+                        <li>• Uploaded: {new Date(selectedAttachment.uploadDate).toLocaleDateString()}</li>
+                        <li>• Category: {selectedAttachment.category}</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              )}
+              
+              {selectedAttachment.type === 'Excel' && (
+                <div className="w-full h-full min-h-[600px] bg-white/5 rounded-lg border border-white/10 flex items-center justify-center">
+                  <div className="text-center">
+                    <FileSpreadsheet size={64} className="text-green-400 mx-auto mb-4" />
+                    <p className="text-gray-300 text-lg font-medium mb-2">Excel Spreadsheet Preview</p>
+                    <p className="text-gray-400 text-sm">This is a sample Excel file: {selectedAttachment.name}</p>
+                    <p className="text-gray-500 text-xs mt-4">In a real application, this would display the spreadsheet data</p>
+                    <div className="mt-6 p-4 bg-white/5 rounded-lg border border-white/10 text-left max-w-md mx-auto">
+                      <p className="text-gray-300 text-sm mb-2">File Information:</p>
+                      <ul className="text-gray-400 text-xs space-y-1">
+                        <li>• File Size: {formatFileSize(selectedAttachment.size)}</li>
+                        <li>• Uploaded: {new Date(selectedAttachment.uploadDate).toLocaleDateString()}</li>
+                        <li>• Category: {selectedAttachment.category}</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              )}
+              
+              {selectedAttachment.type === 'Image' && (
+                <div className="w-full h-full min-h-[600px] bg-white/5 rounded-lg border border-white/10 flex items-center justify-center overflow-hidden">
+                  <div className="text-center w-full">
+                    <div className="w-full max-w-2xl mx-auto bg-gradient-to-br from-cyan-400/20 to-purple-500/20 rounded-lg p-12 border border-white/10">
+                      <ImageIcon size={64} className="text-blue-400 mx-auto mb-4" />
+                      <p className="text-gray-300 text-lg font-medium mb-2">Image Preview</p>
+                      <p className="text-gray-400 text-sm mb-4">This is a sample image: {selectedAttachment.name}</p>
+                      <div className="mt-6 p-4 bg-white/5 rounded-lg border border-white/10 text-left max-w-md mx-auto">
+                        <p className="text-gray-300 text-sm mb-2">Image Information:</p>
+                        <ul className="text-gray-400 text-xs space-y-1">
+                          <li>• File Size: {formatFileSize(selectedAttachment.size)}</li>
+                          <li>• Uploaded: {new Date(selectedAttachment.uploadDate).toLocaleDateString()}</li>
+                          <li>• Category: {selectedAttachment.category}</li>
+                        </ul>
+                      </div>
+                      <p className="text-gray-500 text-xs mt-4">In a real application, this would display the actual image</p>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Viewer Footer */}
+            <div className="p-4 border-t border-white/10 flex items-center justify-between bg-[rgba(18,22,36,0.8)]">
+              <div className="text-sm text-gray-400">
+                {selectedAttachment.category} • {selectedAttachment.type}
+              </div>
+              <button
+                onClick={() => setSelectedAttachment(null)}
                 className="px-6 py-2 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg text-white text-sm font-medium hover:shadow-[0_4px_16px_rgba(76,201,240,0.3)] transition-all"
               >
                 Close
