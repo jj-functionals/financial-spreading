@@ -1,0 +1,237 @@
+{
+  "LOAN-2024-001": [
+    {
+      "name": "Tax_Returns_2021-2023.pdf",
+      "type": "PDF",
+      "size": 2450000,
+      "uploadDate": "2024-01-10",
+      "category": "Tax Documents"
+    },
+    {
+      "name": "Bank_Statements_Jan_2024.pdf",
+      "type": "PDF",
+      "size": 1820000,
+      "uploadDate": "2024-01-12",
+      "category": "Bank Statements"
+    },
+    {
+      "name": "Financial_Statements_2022-2023.xlsx",
+      "type": "Excel",
+      "size": 320000,
+      "uploadDate": "2024-01-13",
+      "category": "Financial Statements"
+    },
+    {
+      "name": "Balance_Sheet_2023.pdf",
+      "type": "PDF",
+      "size": 890000,
+      "uploadDate": "2024-01-13",
+      "category": "Financial Statements"
+    },
+    {
+      "name": "Income_Statement_2023.pdf",
+      "type": "PDF",
+      "size": 750000,
+      "uploadDate": "2024-01-13",
+      "category": "Financial Statements"
+    },
+    {
+      "name": "Business_Plan_2024.pdf",
+      "type": "PDF",
+      "size": 1520000,
+      "uploadDate": "2024-01-14",
+      "category": "Business Documents"
+    },
+    {
+      "name": "Company_Logo.png",
+      "type": "Image",
+      "size": 125000,
+      "uploadDate": "2024-01-14",
+      "category": "Supporting Documents"
+    }
+  ],
+  "LOAN-2024-002": [
+    {
+      "name": "Tax_Returns_2021-2023.pdf",
+      "type": "PDF",
+      "size": 3120000,
+      "uploadDate": "2024-01-18",
+      "category": "Tax Documents"
+    },
+    {
+      "name": "Financial_Statements_2022-2023.xlsx",
+      "type": "Excel",
+      "size": 485000,
+      "uploadDate": "2024-01-19",
+      "category": "Financial Statements"
+    },
+    {
+      "name": "Property_Appraisal_Report.pdf",
+      "type": "PDF",
+      "size": 2150000,
+      "uploadDate": "2024-01-20",
+      "category": "Property Documents"
+    },
+    {
+      "name": "Business_Plan_2024.pdf",
+      "type": "PDF",
+      "size": 1890000,
+      "uploadDate": "2024-01-20",
+      "category": "Business Documents"
+    },
+    {
+      "name": "Manufacturing_Equipment_List.xlsx",
+      "type": "Excel",
+      "size": 145000,
+      "uploadDate": "2024-01-21",
+      "category": "Supporting Documents"
+    },
+    {
+      "name": "Facility_Photos.jpg",
+      "type": "Image",
+      "size": 3200000,
+      "uploadDate": "2024-01-21",
+      "category": "Supporting Documents"
+    }
+  ],
+  "LOAN-2024-003": [
+    {
+      "name": "Tax_Returns_2021-2023.pdf",
+      "type": "PDF",
+      "size": 1980000,
+      "uploadDate": "2024-01-05",
+      "category": "Tax Documents"
+    },
+    {
+      "name": "Bank_Statements_6_Months.pdf",
+      "type": "PDF",
+      "size": 2450000,
+      "uploadDate": "2024-01-06",
+      "category": "Bank Statements"
+    },
+    {
+      "name": "Financial_Statements_2022-2023.xlsx",
+      "type": "Excel",
+      "size": 285000,
+      "uploadDate": "2024-01-07",
+      "category": "Financial Statements"
+    },
+    {
+      "name": "Business_Plan_2024.pdf",
+      "type": "PDF",
+      "size": 1250000,
+      "uploadDate": "2024-01-08",
+      "category": "Business Documents"
+    },
+    {
+      "name": "Personal_Financial_Statement.pdf",
+      "type": "PDF",
+      "size": 680000,
+      "uploadDate": "2024-01-09",
+      "category": "Personal Documents"
+    },
+    {
+      "name": "Store_Locations_Map.pdf",
+      "type": "PDF",
+      "size": 450000,
+      "uploadDate": "2024-01-09",
+      "category": "Supporting Documents"
+    }
+  ],
+  "LOAN-2024-004": [
+    {
+      "name": "Tax_Returns_2021-2023.pdf",
+      "type": "PDF",
+      "size": 2750000,
+      "uploadDate": "2024-01-23",
+      "category": "Tax Documents"
+    },
+    {
+      "name": "Bank_Statements_6_Months.pdf",
+      "type": "PDF",
+      "size": 3120000,
+      "uploadDate": "2024-01-24",
+      "category": "Bank Statements"
+    },
+    {
+      "name": "Financial_Statements_2022-2023.xlsx",
+      "type": "Excel",
+      "size": 420000,
+      "uploadDate": "2024-01-25",
+      "category": "Financial Statements"
+    },
+    {
+      "name": "Business_Plan_2024.pdf",
+      "type": "PDF",
+      "size": 1680000,
+      "uploadDate": "2024-01-26",
+      "category": "Business Documents"
+    },
+    {
+      "name": "Vehicle_Appraisals_2024.pdf",
+      "type": "PDF",
+      "size": 1950000,
+      "uploadDate": "2024-01-27",
+      "category": "Vehicle Documents"
+    },
+    {
+      "name": "Fleet_Photos.jpg",
+      "type": "Image",
+      "size": 4850000,
+      "uploadDate": "2024-01-27",
+      "category": "Supporting Documents"
+    },
+    {
+      "name": "Warehouse_Lease_Agreement.pdf",
+      "type": "PDF",
+      "size": 1250000,
+      "uploadDate": "2024-01-28",
+      "category": "Legal Documents"
+    }
+  ],
+  "LOAN-2024-005": [
+    {
+      "name": "Tax_Returns_2021-2023.pdf",
+      "type": "PDF",
+      "size": 1850000,
+      "uploadDate": "2024-01-28",
+      "category": "Tax Documents"
+    },
+    {
+      "name": "Financial_Statements_2022-2023.xlsx",
+      "type": "Excel",
+      "size": 245000,
+      "uploadDate": "2024-01-29",
+      "category": "Financial Statements"
+    },
+    {
+      "name": "Business_Plan_2024.pdf",
+      "type": "PDF",
+      "size": 1420000,
+      "uploadDate": "2024-01-30",
+      "category": "Business Documents"
+    },
+    {
+      "name": "R&D_Documentation_2023.pdf",
+      "type": "PDF",
+      "size": 3250000,
+      "uploadDate": "2024-01-31",
+      "category": "R&D Documents"
+    },
+    {
+      "name": "Patent_Applications.pdf",
+      "type": "PDF",
+      "size": 1850000,
+      "uploadDate": "2024-01-31",
+      "category": "Legal Documents"
+    },
+    {
+      "name": "Product_Prototype_Images.jpg",
+      "type": "Image",
+      "size": 2850000,
+      "uploadDate": "2024-02-01",
+      "category": "Supporting Documents"
+    }
+  ]
+}
+

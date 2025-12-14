@@ -1,0 +1,318 @@
+[
+  {
+    "applicationId": "LOAN-2024-001",
+    "status": "Under Review",
+    "submittedDate": "2024-01-15",
+    "companyName": "TechStart Solutions Inc.",
+    "industry": "Technology Services",
+    "loanAmount": 2500000,
+    "loanPurpose": "Working Capital & Equipment Purchase",
+    "requestedTerm": "5 years",
+    "contactInfo": {
+      "primaryContact": "Sarah Johnson",
+      "email": "sarah.johnson@techstart.com",
+      "phone": "(555) 234-5678"
+    },
+    "financialSummary": {
+      "annualRevenue": 8500000,
+      "totalAssets": 4200000,
+      "totalLiabilities": 1800000,
+      "netWorth": 2400000,
+      "debtToEquity": 0.75,
+      "currentRatio": 2.1
+    },
+    "documents": {
+      "uploaded": ["Tax Returns (2021-2023)", "Bank Statements (6 months)", "Financial Statements (2022-2023)", "Business Plan"],
+      "missing": ["Personal Financial Statement", "Accounts Receivable Aging Report"]
+    },
+    "balanceSheet": {
+      "assets": {
+        "Cash & Equivalents": [450000, 520000, 680000],
+        "Accounts Receivable": [320000, 380000, 420000],
+        "Inventory": [180000, 195000, 210000],
+        "Prepaid Expenses": [45000, 52000, 58000],
+        "Property & Equipment": [2800000, 2950000, 3100000],
+        "Accumulated Depreciation": [-420000, -580000, -750000],
+        "Intangible Assets": [85000, 90000, 95000]
+      },
+      "liabilities": {
+        "Accounts Payable": [180000, 195000, 210000],
+        "Short-term Debt": [120000, 110000, 95000],
+        "Current Portion LTD": [85000, 90000, 95000],
+        "Long-term Debt": [1200000, 1150000, 1100000],
+        "Deferred Revenue": [45000, 50000, 55000]
+      },
+      "equity": {
+        "Common Stock": [500000, 500000, 500000],
+        "Retained Earnings": [1900000, 2180000, 2480000]
+      }
+    },
+    "incomeStatement": {
+      "revenue": {
+        "Product Sales": [5200000, 6100000, 7200000],
+        "Service Revenue": [2800000, 3200000, 3800000],
+        "Other Income": [45000, 52000, 68000]
+      },
+      "expenses": {
+        "Cost of Goods Sold": [3200000, 3750000, 4400000],
+        "Operating Expenses": [2100000, 2350000, 2650000],
+        "Interest Expense": [85000, 78000, 72000],
+        "Depreciation": [120000, 160000, 170000],
+        "Income Tax": [185000, 225000, 280000]
+      }
+    }
+  },
+  {
+    "applicationId": "LOAN-2024-002",
+    "status": "Document Collection",
+    "submittedDate": "2024-01-22",
+    "companyName": "Green Manufacturing Co.",
+    "industry": "Manufacturing",
+    "loanAmount": 5000000,
+    "loanPurpose": "Facility Expansion & Machinery",
+    "requestedTerm": "7 years",
+    "contactInfo": {
+      "primaryContact": "Michael Chen",
+      "email": "m.chen@greenmfg.com",
+      "phone": "(555) 345-6789"
+    },
+    "financialSummary": {
+      "annualRevenue": 12500000,
+      "totalAssets": 8200000,
+      "totalLiabilities": 4200000,
+      "netWorth": 4000000,
+      "debtToEquity": 1.05,
+      "currentRatio": 1.8
+    },
+    "documents": {
+      "uploaded": ["Tax Returns (2021-2023)", "Financial Statements (2022-2023)", "Business Plan", "Property Appraisal"],
+      "missing": ["Bank Statements (6 months)", "Accounts Payable Aging Report", "Inventory Valuation Report"]
+    },
+    "balanceSheet": {
+      "assets": {
+        "Cash & Equivalents": [680000, 750000, 820000],
+        "Accounts Receivable": [520000, 580000, 640000],
+        "Inventory": [420000, 480000, 520000],
+        "Prepaid Expenses": [65000, 72000, 78000],
+        "Property & Equipment": [5800000, 6200000, 6600000],
+        "Accumulated Depreciation": [-850000, -1100000, -1350000],
+        "Intangible Assets": [120000, 130000, 140000]
+      },
+      "liabilities": {
+        "Accounts Payable": [320000, 350000, 380000],
+        "Short-term Debt": [180000, 170000, 160000],
+        "Current Portion LTD": [120000, 130000, 140000],
+        "Long-term Debt": [3200000, 3300000, 3400000],
+        "Deferred Revenue": [68000, 75000, 82000]
+      },
+      "equity": {
+        "Common Stock": [800000, 800000, 800000],
+        "Retained Earnings": [3200000, 3650000, 4100000]
+      }
+    },
+    "incomeStatement": {
+      "revenue": {
+        "Product Sales": [8500000, 9800000, 11200000],
+        "Service Revenue": [3200000, 3600000, 4100000],
+        "Other Income": [68000, 75000, 90000]
+      },
+      "expenses": {
+        "Cost of Goods Sold": [5200000, 6000000, 6800000],
+        "Operating Expenses": [3800000, 4200000, 4700000],
+        "Interest Expense": [125000, 118000, 112000],
+        "Depreciation": [250000, 250000, 250000],
+        "Income Tax": [320000, 380000, 450000]
+      }
+    }
+  },
+  {
+    "applicationId": "LOAN-2024-003",
+    "status": "Pending Approval",
+    "submittedDate": "2024-01-10",
+    "companyName": "Urban Retail Group LLC",
+    "industry": "Retail",
+    "loanAmount": 1200000,
+    "loanPurpose": "Inventory & Store Renovation",
+    "requestedTerm": "3 years",
+    "contactInfo": {
+      "primaryContact": "Emily Rodriguez",
+      "email": "emily.r@urbanretail.com",
+      "phone": "(555) 456-7890"
+    },
+    "financialSummary": {
+      "annualRevenue": 4200000,
+      "totalAssets": 2100000,
+      "totalLiabilities": 850000,
+      "netWorth": 1250000,
+      "debtToEquity": 0.68,
+      "currentRatio": 2.4
+    },
+    "documents": {
+      "uploaded": ["Tax Returns (2021-2023)", "Bank Statements (6 months)", "Financial Statements (2022-2023)", "Business Plan", "Personal Financial Statement"],
+      "missing": []
+    },
+    "balanceSheet": {
+      "assets": {
+        "Cash & Equivalents": [280000, 320000, 360000],
+        "Accounts Receivable": [180000, 195000, 210000],
+        "Inventory": [420000, 480000, 520000],
+        "Prepaid Expenses": [35000, 40000, 45000],
+        "Property & Equipment": [1200000, 1250000, 1300000],
+        "Accumulated Depreciation": [-180000, -240000, -300000],
+        "Intangible Assets": [25000, 28000, 30000]
+      },
+      "liabilities": {
+        "Accounts Payable": [120000, 130000, 140000],
+        "Short-term Debt": [65000, 60000, 55000],
+        "Current Portion LTD": [45000, 50000, 55000],
+        "Long-term Debt": [580000, 600000, 620000],
+        "Deferred Revenue": [28000, 30000, 32000]
+      },
+      "equity": {
+        "Common Stock": [300000, 300000, 300000],
+        "Retained Earnings": [950000, 1080000, 1220000]
+      }
+    },
+    "incomeStatement": {
+      "revenue": {
+        "Product Sales": [3200000, 3600000, 4000000],
+        "Service Revenue": [850000, 950000, 1100000],
+        "Other Income": [28000, 32000, 38000]
+      },
+      "expenses": {
+        "Cost of Goods Sold": [1950000, 2200000, 2450000],
+        "Operating Expenses": [1250000, 1380000, 1520000],
+        "Interest Expense": [42000, 38000, 35000],
+        "Depreciation": [60000, 60000, 60000],
+        "Income Tax": [95000, 110000, 130000]
+      }
+    }
+  },
+  {
+    "applicationId": "LOAN-2024-004",
+    "status": "Under Review",
+    "submittedDate": "2024-01-28",
+    "companyName": "Coastal Logistics Services",
+    "industry": "Transportation & Logistics",
+    "loanAmount": 3500000,
+    "loanPurpose": "Fleet Expansion & Warehouse",
+    "requestedTerm": "6 years",
+    "contactInfo": {
+      "primaryContact": "David Thompson",
+      "email": "d.thompson@coastallog.com",
+      "phone": "(555) 567-8901"
+    },
+    "financialSummary": {
+      "annualRevenue": 9800000,
+      "totalAssets": 5600000,
+      "totalLiabilities": 2800000,
+      "netWorth": 2800000,
+      "debtToEquity": 1.0,
+      "currentRatio": 1.9
+    },
+    "documents": {
+      "uploaded": ["Tax Returns (2021-2023)", "Bank Statements (6 months)", "Financial Statements (2022-2023)", "Business Plan", "Vehicle Appraisals"],
+      "missing": ["Accounts Receivable Aging Report"]
+    },
+    "balanceSheet": {
+      "assets": {
+        "Cash & Equivalents": [520000, 580000, 640000],
+        "Accounts Receivable": [420000, 480000, 540000],
+        "Inventory": [180000, 195000, 210000],
+        "Prepaid Expenses": [55000, 60000, 65000],
+        "Property & Equipment": [4200000, 4500000, 4800000],
+        "Accumulated Depreciation": [-680000, -920000, -1180000],
+        "Intangible Assets": [65000, 70000, 75000]
+      },
+      "liabilities": {
+        "Accounts Payable": [240000, 260000, 280000],
+        "Short-term Debt": [140000, 130000, 120000],
+        "Current Portion LTD": [95000, 100000, 105000],
+        "Long-term Debt": [2200000, 2250000, 2300000],
+        "Deferred Revenue": [52000, 55000, 58000]
+      },
+      "equity": {
+        "Common Stock": [600000, 600000, 600000],
+        "Retained Earnings": [2200000, 2500000, 2800000]
+      }
+    },
+    "incomeStatement": {
+      "revenue": {
+        "Product Sales": [7200000, 8200000, 9200000],
+        "Service Revenue": [2200000, 2500000, 2800000],
+        "Other Income": [55000, 62000, 70000]
+      },
+      "expenses": {
+        "Cost of Goods Sold": [4500000, 5100000, 5700000],
+        "Operating Expenses": [3200000, 3600000, 4000000],
+        "Interest Expense": [98000, 92000, 86000],
+        "Depreciation": [240000, 240000, 240000],
+        "Income Tax": [280000, 320000, 360000]
+      }
+    }
+  },
+  {
+    "applicationId": "LOAN-2024-005",
+    "status": "Document Collection",
+    "submittedDate": "2024-02-01",
+    "companyName": "MedTech Innovations Ltd.",
+    "industry": "Healthcare Technology",
+    "loanAmount": 1800000,
+    "loanPurpose": "R&D & Product Development",
+    "requestedTerm": "4 years",
+    "contactInfo": {
+      "primaryContact": "Dr. James Wilson",
+      "email": "j.wilson@medtechinnov.com",
+      "phone": "(555) 678-9012"
+    },
+    "financialSummary": {
+      "annualRevenue": 3200000,
+      "totalAssets": 2400000,
+      "totalLiabilities": 950000,
+      "netWorth": 1450000,
+      "debtToEquity": 0.66,
+      "currentRatio": 2.5
+    },
+    "documents": {
+      "uploaded": ["Tax Returns (2021-2023)", "Financial Statements (2022-2023)", "Business Plan", "R&D Documentation"],
+      "missing": ["Bank Statements (6 months)", "Personal Financial Statement", "Accounts Receivable Aging Report"]
+    },
+    "balanceSheet": {
+      "assets": {
+        "Cash & Equivalents": [380000, 420000, 460000],
+        "Accounts Receivable": [240000, 270000, 300000],
+        "Inventory": [85000, 95000, 105000],
+        "Prepaid Expenses": [42000, 48000, 54000],
+        "Property & Equipment": [1500000, 1600000, 1700000],
+        "Accumulated Depreciation": [-280000, -380000, -480000],
+        "Intangible Assets": [180000, 190000, 200000]
+      },
+      "liabilities": {
+        "Accounts Payable": [95000, 105000, 115000],
+        "Short-term Debt": [55000, 50000, 45000],
+        "Current Portion LTD": [38000, 42000, 46000],
+        "Long-term Debt": [720000, 740000, 760000],
+        "Deferred Revenue": [32000, 35000, 38000]
+      },
+      "equity": {
+        "Common Stock": [400000, 400000, 400000],
+        "Retained Earnings": [1050000, 1200000, 1350000]
+      }
+    },
+    "incomeStatement": {
+      "revenue": {
+        "Product Sales": [2200000, 2500000, 2800000],
+        "Service Revenue": [850000, 950000, 1050000],
+        "Other Income": [42000, 48000, 54000]
+      },
+      "expenses": {
+        "Cost of Goods Sold": [1350000, 1520000, 1700000],
+        "Operating Expenses": [1200000, 1350000, 1500000],
+        "Interest Expense": [32000, 30000, 28000],
+        "Depreciation": [100000, 100000, 100000],
+        "Income Tax": [85000, 100000, 115000]
+      }
+    }
+  }
+]
+
